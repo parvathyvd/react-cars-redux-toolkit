@@ -23,7 +23,7 @@ const CarList = () => {
           const bold =
             name && car.name.toLowerCase().includes(name.toLowerCase());
           return (
-            <li key={car.id} className={`list-item ${bold} && "bold"`}>
+            <li key={car.id} className={`list-item ${bold && "bold"}`}>
               <span>{car.name}</span>
               <span>{car.cost}</span>
               <span
